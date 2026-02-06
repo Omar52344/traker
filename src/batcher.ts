@@ -50,6 +50,10 @@ export class Batcher {
 
     private send(events: TrackerEvent[], useBeaconForce: boolean = false): void {
         try {
+            if (this.settings.debug) {
+                console.log('[Traker] Sending events:', events);
+            }
+
             const data = JSON.stringify(events);
 
             // Use Beacon if requested or forced (page hide), provided it's supported
