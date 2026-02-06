@@ -35,6 +35,7 @@ export interface Settings {
     useBeacon: boolean;
     autoRefresh?: boolean;
     debug?: boolean;
+    customMeta?: Record<string, any>;
 }
 
 export interface TrakerConfig {

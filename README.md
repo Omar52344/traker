@@ -20,6 +20,13 @@ Most analytics tools are "black boxes". Traker gives you raw, component-relative
   - Visibility (>50% visibility for >1s)
 - **Zero Dependencies**: Built with Vanilla TypeScript.
 
+
+## Requirements
+
+- Node.js >= 14.17.0
+- TypeScript >= 4.5
+- Browser Support: ES2018+ (All modern browsers)
+
 ## Installation
 
 ```bash
@@ -41,7 +48,11 @@ const config = {
     sampleRate: 1.0,
     useBeacon: true,
     autoRefresh: true,
-    debug: false
+    debug: false,
+    customMeta: {
+        userId: "12345",        // Example: Inject logged-in user ID
+        role: "admin"
+    }
   },
   trackingPlan: {
     "hero-button": { click: true, hover: true, visibility: true },

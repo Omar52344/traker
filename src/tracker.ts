@@ -200,6 +200,11 @@ export class Traker {
             meta.vWidth = window.innerWidth;
             meta.vHeight = window.innerHeight;
 
+            // Merge custom global metadata (e.g., User ID)
+            if (this.config.settings.customMeta) {
+                Object.assign(meta, this.config.settings.customMeta);
+            }
+
             const event: TrackerEvent = {
                 sid: this.sessionId,
                 cid: cid,
