@@ -33,6 +33,8 @@ export interface Settings {
     flushInterval: number; // milliseconds
     sampleRate: number; // 0.0 to 1.0
     useBeacon: boolean;
+    autoRefresh?: boolean;
+    debug?: boolean;
 }
 
 export interface TrakerConfig {

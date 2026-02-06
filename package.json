@@ -1,7 +1,7 @@
 {
   "name": "traker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Privacy-first, component-based analytics with relative precision",
   "main": "dist/traker.js",
   "module": "dist/traker.esm.js",
   "types": "dist/types/index.d.ts",
@@ -12,7 +12,13 @@
     "build": "rimraf dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "analytics",
+    "heatmap",
+    "frontend",
+    "ux",
+    "tracking"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",

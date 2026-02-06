@@ -39,7 +39,9 @@ const config = {
     endpoint: "https://api.your-domain.com/collect",
     flushInterval: 5000,
     sampleRate: 1.0,
-    useBeacon: true
+    useBeacon: true,
+    autoRefresh: true,
+    debug: false
   },
   trackingPlan: {
     "hero-button": { click: true, hover: true, visibility: true },
