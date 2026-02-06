@@ -15,6 +15,9 @@ export class Traker {
 
     constructor(config: TrakerConfig) {
         this.config = config;
+        // Initialize safely to satisfy strict property initialization
+        this.sessionId = generateUUID();
+
         try {
             this.sessionId = this.getSessionId();
 
