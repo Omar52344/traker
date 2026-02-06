@@ -1,6 +1,6 @@
 {
   "name": "changestraker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Privacy-first, component-based analytics with relative precision",
   "main": "dist/traker.js",
   "module": "dist/traker.esm.js",
