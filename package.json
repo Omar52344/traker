@@ -1,5 +1,5 @@
 {
-  "name": "traker",
+  "name": "changestraker",
   "version": "1.0.0",
   "description": "Privacy-first, component-based analytics with relative precision",
   "main": "dist/traker.js",
